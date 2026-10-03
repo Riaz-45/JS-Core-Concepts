@@ -44,8 +44,8 @@ const displayUsers = users => {
         console.log(user);
         const userCard = document.createElement("div");
         userCard.innerHTML = ` <div class="user-card">
-                <h3>Rakibul Hasan Riaz</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam maiores ratione natus praesentium nesciunt neque dolorum eum quibusdam temporibus odit?</p>
+                <h3>${user.name}</h3>
+                <p>${user.email}</p>
             </div>`;
 
         userContainer.append(userCard);

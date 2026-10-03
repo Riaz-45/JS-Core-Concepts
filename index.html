@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #post-container, #user-container{
+        #post-container, #user-container, #album-container{
             max-width: 1160px;
             margin: 50px auto;
             display: grid;
@@ -13,14 +13,14 @@
             grid-gap: 20px;
             row-gap: 50px;
         }
-        .post-card, .user-card{
+        .post-card, .user-card, .album-card{
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 10px;
             box-shadow: 1px 1px;
             height: 100%;
         }
-        .post-card, .user-card p{
+        .post-card, .user-card, .album-card p{
             text-align: justify;
         }
     </style>
@@ -34,6 +34,8 @@
 
         <button onclick="loadUsers()">Load User</button>
 
+        <button onclick="loadAlbums()">Load Albums</button>
+
         <h1>All Post</h1>
 
         <div id="post-container">
@@ -44,8 +46,13 @@
            
         </div>
 
+        <div id="album-container">
+            
+        </div>
+
     <script src="script.js"></script>
     <script src="posts.js"></script>
     <script src="users.js"></script>
+    <script src="albums.js"></script>
 </body>
 </html>
