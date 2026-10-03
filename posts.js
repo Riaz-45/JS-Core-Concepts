@@ -21,7 +21,7 @@ const displayPosts = (posts) => {
     postContainer.innerHTML = "";
     posts.forEach((post) => {
     // 2. create element
-    const postCard  = document.createElement("div");
+    const postCard = document.createElement("div");
     postCard.innerHTML = `<div class="post-card">
         <h2>${post.title}</h2>
         <p>${post.body}</p>
@@ -32,7 +32,10 @@ const displayPosts = (posts) => {
     });
 };
 
-loadPost();
+// loadPost();
+
+
+
 
 // const displayPosts = (posts) => {
 //     console.log(posts);
