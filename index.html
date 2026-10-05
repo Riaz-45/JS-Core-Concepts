@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <style>
-        #post-container, #user-container, #album-container{
+        #post-container, #user-container, #album-container, #todo-container{
             max-width: 1160px;
             margin: 50px auto;
             display: grid;
@@ -13,14 +14,14 @@
             grid-gap: 20px;
             row-gap: 50px;
         }
-        .post-card, .user-card, .album-card{
+        .post-card, .user-card, .album-card, .todo-card{
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 10px;
             box-shadow: 1px 1px;
             height: 100%;
         }
-        .post-card, .user-card, .album-card p{
+        .post-card, .user-card, .album-card, .todo-card p{
             text-align: justify;
         }
     </style>
@@ -36,6 +37,8 @@
 
         <button onclick="loadAlbums()">Load Albums</button>
 
+        <button onclick="loadTodo()">Load Todo</button>
+
         <h1>All Post</h1>
 
         <div id="post-container">
@@ -50,9 +53,14 @@
             
         </div>
 
+        <div id="todo-container">
+            
+        </div>
+
     <script src="script.js"></script>
     <script src="posts.js"></script>
     <script src="users.js"></script>
     <script src="albums.js"></script>
+    <script src="todo.js"></script>
 </body>
 </html>
